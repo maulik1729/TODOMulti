@@ -1,0 +1,119 @@
+/*To set box-sizing */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.container{
+     background: url("../images/a.jpg") center;
+     background-size:cover;
+     min-height: 100vh;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.todo{
+      background: white;
+      width: 500px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo__header{
+      margin: 0px;
+      padding: 5px;
+      font-size: 80px;
+      font-weight: bold;
+      border-bottom: 5px solid rgba(0,0,0,0.1);
+}
+
+
+
+.tasklist{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5em;
+    word-break: break-word;
+}
+
+.tasklist__task{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+}
+
+.tasklist__text{
+    flex: 1;
+    padding: 10px;
+}
+
+.tasklist__text:focus{
+    outline: 0px;
+    border: 2px solid rgba(0,0,0,0.5);
+}
+
+.tasklist__text--checked{
+    text-decoration: line-through;
+
+}
+
+.tasklist__label{
+    text-decoration: line-through;
+}
+
+
+.tasklist__item{
+    padding: 10px;
+    color:  rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+.tasklist__task:hover .tasklist__item{
+    visibility:visible;
+}
+
+.todo__taketask{
+    width: 100%;
+    padding:10px;
+    border:5px solid rgba(0,0,0,0.1);
+}
+
+.filter{
+    display: flex;
+}
+
+.filter__item{
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px;
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter__item--dark{
+    border: 3px solid rgba(0,0,0,0.5);
+    transition: border ease-in-out 0.05s;
+}
+
+.clearcompleted{
+    display: block;
+    padding: 10px;
+    border: 5px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clearcompleted--hide{
+   display: none;
+
+}

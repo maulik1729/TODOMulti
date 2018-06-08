@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>To Do List</title>
+        <link href="src/styles/normalize.css" rel="stylesheet">
+        <link href="src/styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo">
+                <h1 class="todo__header">To Do List</h1>
+                <ul class="tasklist">
+                </ul>
+                <input class="todo__taketask" type="text"  placeholder="Enter Task" autocomplete="off" required>
+                <div class="filter">
+                    <span class="filter__item filter__item--dark">All</span>
+                    <span class="filter__item">Active</span>
+                    <span class="filter__item">Completed</span>
+                </div>
+                <span class="clearcompleted">
+                        Clear Completed Task
+                </span>
+            </div>
+        </div>
+    </body>
+    <script src="dist/script.bundle.js"></script>
+</html>
